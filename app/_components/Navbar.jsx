@@ -23,12 +23,13 @@ export default function Navbar() {
   // Navigation links
   const navLinks = [
     { name: 'Home', href: '/' },
+    { name: 'Location', href: '#location' },
     {
       name: 'Products',
       href: '/products',
     },
 
-    { name: 'Location', href: '#location' }
+   
   ];
 
   return (
