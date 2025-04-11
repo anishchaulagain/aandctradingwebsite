@@ -13,7 +13,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -22,34 +22,33 @@ export default function Navbar() {
 
   // Navigation links
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { 
-      name: 'Products', 
+    { name: 'Home', href: '/' },
+    {
+      name: 'Products',
       href: '/products',
     },
-    
+
     { name: 'Location', href: '#location' }
   ];
 
   return (
     <>
       <motion.nav
-  transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-  className={`fixed w-full z-50 transition-all duration-300 ${
-    isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
-  }`}
->
+        transition={{ type: 'spring', stiffness: 120, damping: 20 }}
+        className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+          }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center"
             >
               <span className={`text-2xl font-bold ${isScrolled ? 'text-red-600' : 'text-red-600'}`}>
                 A & C<span className="text-orange-500"> Trading</span>
               </span>
-              
+
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -59,19 +58,18 @@ export default function Navbar() {
                   {link.dropdown ? (
                     <div>
                       <motion.button
-                        className={`px-4 py-2 rounded-md  flex items-center ${
-                          isScrolled ? 'text-gray-800 hover:text-red-600' : 'text-gray-800 hover:text-orange-300'
-                        } font-medium`}
+                        className={`px-4 py-2 rounded-md  flex items-center ${isScrolled ? 'text-gray-800   hover:text-red-600' : 'text-gray-800 hover:text-gray-500'
+                          } font-medium`}
                         whileHover={{ scale: 1.05 }}
                         onClick={() => setActiveDropdown(activeDropdown === index ? null : index)}
                       >
-                        <h1 className='font-bold'>{link.name}</h1>
-                        <ChevronDown 
-                          className="ml-1 h-4 w-4" 
-                          style={{ 
+                        <h1 className='font-bold '>{link.name}</h1>
+                        <ChevronDown
+                          className="ml-1 h-4 w-4"
+                          style={{
                             transform: activeDropdown === index ? 'rotate(180deg)' : 'rotate(0deg)',
                             transition: 'transform 0.3s ease'
-                          }} 
+                          }}
                         />
                       </motion.button>
                       <AnimatePresence>
@@ -100,9 +98,8 @@ export default function Navbar() {
                   ) : (
                     <motion.a
                       href={link.href}
-                      className={`px-4 py-2 rounded-md font-bold ${
-                        isScrolled ? 'text-gray-800 hover:text-red-600' : 'text-gray-800 hover:text-orange-300'
-                      } font-medium`}
+                      className={`px-4 py-2 rounded-md font-bold ${isScrolled ? 'text-gray-800 hover:text-red-600' : 'text-gray-800 hover:text-orange-300'
+                        } font-medium`}
                       whileHover={{ scale: 1.05 }}
                     >
                       {link.name}
@@ -114,20 +111,20 @@ export default function Navbar() {
 
             {/* Action Buttons */}
             <div className="hidden lg:flex items-center space-x-4">
-             
-              
-              <motion.button 
+
+
+              <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-black hover:bg-gray-900 text-white px-4 py-2  rounded-lg flex items-center gap-2 transition-colors duration-300"
               >
-               <a href="mailto:anishchaulagain2058@gmail.com">Become a Retailer</a>
+                <a href="mailto:anishchaulagain2058@gmail.com">Become a Retailer</a>
               </motion.button>
             </div>
 
             {/* Mobile menu button */}
             <div className="lg:hidden flex items-center">
-              <motion.button 
+              <motion.button
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className={`p-2 rounded-md ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}
@@ -159,12 +156,12 @@ export default function Navbar() {
                         className="flex items-center justify-between w-full text-gray-800 font-medium"
                       >
                         {link.name}
-                        <ChevronDown 
-                          className="h-5 w-5" 
-                          style={{ 
+                        <ChevronDown
+                          className="h-5 w-5"
+                          style={{
                             transform: activeDropdown === index ? 'rotate(180deg)' : 'rotate(0deg)',
                             transition: 'transform 0.3s ease'
-                          }} 
+                          }}
                         />
                       </button>
                       <AnimatePresence>
@@ -195,7 +192,7 @@ export default function Navbar() {
                   )}
                 </div>
               ))}
-              
+
               <div className="pt-4 border-t border-gray-200">
                 <button className="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg flex items-center justify-center gap-2 transition-colors duration-300">
                   <ShoppingBag size={18} />
@@ -206,7 +203,7 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-      
+
       {/* Overlay for mobile menu backdrop */}
       <AnimatePresence>
         {mobileMenuOpen && (

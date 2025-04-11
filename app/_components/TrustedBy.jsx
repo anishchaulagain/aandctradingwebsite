@@ -37,8 +37,8 @@ export default function TrustedCompanies() {
           color: "bg-green-500",
         },
         {
-          name: "Company C",
-          logo: "https://via.placeholder.com/150", // Replace with the actual logo URL
+          name: "GoodLife Biscuits",
+          logo: "https://res.cloudinary.com/dv9s1kiz2/image/upload/v1744381072/aandctrading/b7b7f3d9-b00d-409c-869a-5ee1b6d77ebc.png", // Replace with the actual logo URL
           color: "bg-red-500",
         },
         // Add more companies as needed

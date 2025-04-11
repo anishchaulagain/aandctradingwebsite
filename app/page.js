@@ -8,8 +8,8 @@ import Copyright from "./_components/Copyright";
 
 export default function Home() {
   return (
-    <div className="bg-gray-50">
-    <Navbar/>
+    <div className="md:bg-gray-50 bg-white">
+    
       <HeroSection />
       <TrustedCompanies/>
       <MapLocation/>

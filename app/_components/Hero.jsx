@@ -80,7 +80,7 @@ export default function HeroSection() {
                                 whileTap={{ scale: 0.95 }}
                                 className="bg-black hover:bg-gray-900 cursor-pointer  text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 shadow-lg shadow-red-200 transition-all duration-300"
                             >
-                                Our Products <ArrowRight size={18} />
+                                <a href="/products" className='flex gap-x-2 items-center'>Our Products <ArrowRight size={18} /></a>
                             </motion.button>
 
                             <motion.button
@@ -177,7 +177,7 @@ export default function HeroSection() {
                                 whileTap={{ scale: 0.95 }}
                                 className="mt-4 text-blue-600 font-medium flex items-center gap-1 mx-auto"
                             >
-                                Learn more <ArrowRight size={16} />
+                               <a href="/products">Learn more</a>  <ArrowRight size={16} />
                             </motion.button>
                         </motion.div>
                     ))}
@@ -202,7 +202,7 @@ export default function HeroSection() {
                             <div className="text-blue-200 mt-1">Brand Partners</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold">15+</div>
+                            <div className="text-4xl font-bold">11+</div>
                             <div className="text-blue-200 mt-1">Years Experience</div>
                         </div>
                         <div>

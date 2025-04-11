@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.nav-link {
+  @apply relative font-semibold text-black cursor-pointer text-[17px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#5c7af8] after:w-full hover:text-[#5c7af8] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden
+}
