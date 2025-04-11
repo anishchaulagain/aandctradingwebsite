@@ -41,6 +41,11 @@ export default function TrustedCompanies() {
           logo: "https://res.cloudinary.com/dv9s1kiz2/image/upload/v1744381072/aandctrading/b7b7f3d9-b00d-409c-869a-5ee1b6d77ebc.png", // Replace with the actual logo URL
           color: "bg-red-500",
         },
+        {
+            name: "Zesty",
+            logo: "https://res.cloudinary.com/dv9s1kiz2/image/upload/v1744387948/aandctrading/b35a0d6f-64b7-488f-a307-eb1a49cdad7d.png", // Replace with the actual logo URL
+            color: "bg-red-500",
+          },
         // Add more companies as needed
       ];
 
