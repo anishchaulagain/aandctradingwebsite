@@ -21,7 +21,7 @@ const BecomeRetailer = () => {
           whileTap={{ scale: 0.95 }}
           className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium shadow-lg shadow-blue-200 transition-all duration-300"
         >
-          <a href="mailto:anishchaulagain2058@gmail.com">Become a Retailer</a>
+          <a href="/contact">Become a Retailer</a>
         </motion.button>
       </motion.div>
     </div>

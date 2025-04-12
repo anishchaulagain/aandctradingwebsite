@@ -23,12 +23,12 @@ export default function Navbar() {
   // Navigation links
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Location', href: '#location' },
+    
     {
       name: 'Products',
       href: '/products',
     },
-
+    { name: 'Contact Us', href: '/contact' },
    
   ];
 
@@ -119,7 +119,7 @@ export default function Navbar() {
                 whileTap={{ scale: 0.95 }}
                 className="bg-black hover:bg-gray-900 text-white px-4 py-2  rounded-lg flex items-center gap-2 transition-colors duration-300"
               >
-                <a href="mailto:anishchaulagain2058@gmail.com">Become a Retailer</a>
+                <a href="/contact">Become a Retailer</a>
               </motion.button>
             </div>
 
@@ -194,12 +194,7 @@ export default function Navbar() {
                 </div>
               ))}
 
-              <div className="pt-4 border-t border-gray-200">
-                <button className="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg flex items-center justify-center gap-2 transition-colors duration-300">
-                  <ShoppingBag size={18} />
-                  View Our Catalog
-                </button>
-              </div>
+              
             </div>
           </motion.div>
         )}

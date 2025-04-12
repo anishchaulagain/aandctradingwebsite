@@ -89,7 +89,7 @@ export default function HeroSection() {
                                 className="bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300"
                             
                             >
-                                <a href="mailto:anishchaulagain2058@gmail.com">Become a Retailer</a>
+                                <a href="/contact">Become a Retailer</a>
                             </motion.button>
                         </motion.div>
 
